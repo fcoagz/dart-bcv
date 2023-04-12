@@ -1,4 +1,4 @@
-import 'package:dart_bcv/bcv.dart';
+import 'package:dart_bcv/dart_bcv.dart';
 import 'package:test/test.dart';
 
 void main() {

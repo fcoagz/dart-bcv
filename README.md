@@ -21,7 +21,7 @@ Para obtener información del BCV, creamos una instancia de la clase `BCVWebSite
 - Tiene como parametro `currency_code` para acceder a una moneda en especifica al metodo `get_rates()`.
 
 ```dart
-import 'package:dart_bcv/bcv.dart';
+import 'package:dart_bcv/dart_bcv.dart';
 
 void main() async {
   final String instanceBCV = await BCVWebSite.get_rates(currency_code: 'USD'); // Obtener la Mondena USD
@@ -34,7 +34,7 @@ void main() async {
 
 Para obtener todas las monedas disponibles de dart_bcv. Utilizamos el metodo `get_rates()` dejando comillas simples `' '` al parametro `currency_code`.
 ```dart
-import 'package:dart_bcv/bcv.dart';
+import 'package:dart_bcv/dart_bcv.dart';
 
 void main() async {
   final String instanceBCV = await BCVWebSite.get_rates(currency_code: ' '); // Obtener todas las monedas
