@@ -3,7 +3,7 @@ import 'package:html/parser.dart' as html;
 import 'format_document.dart';
 
 class BCVWebSite {
-  static Future<dynamic> get_rates({required currency_code}) async {
+  static Future<dynamic> getRates({required currencyCode}) async {
     final response = await http.get(Uri.parse('https://www.bcv.org.ve/'));
 
     if (response.statusCode == 200) {
@@ -41,8 +41,8 @@ class BCVWebSite {
         exchangeRates[4][0] : dolar.toStringAsFixed(2)
       };
 
-      if (rates.containsKey(currency_code)) {
-        return rates[currency_code];
+      if (rates.containsKey(currencyCode)) {
+        return rates[currencyCode];
       } else {
         return rates;
       }
