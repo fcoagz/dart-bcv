@@ -1,0 +1,15 @@
+name: dart_bcv
+description: Es una librería que se enfoca en obtener los datos de tipos de cambio del BCV en un formato utilizable en Dart
+version: 1.0.0
+repository: https://github.com/fcoagz/dart-bcv
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  http: ^0.13.5
+  html: ^0.15.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
