@@ -16,15 +16,15 @@ dart pub get
 ```
 
 ## Uso
-Para obtener información del BCV, creamos una instancia de la clase `BCVWebSite` para acceder al metodo `get_rates()`.
+Para obtener información del BCV, creamos una instancia de la clase `BCVWebSite` para acceder al metodo `getRates()`.
 
-- Tiene como parametro `currency_code` para acceder a una moneda en especifica al metodo `get_rates()`.
+- Tiene como parametro `currencyCode` para acceder a una moneda en especifica al metodo `getRates()`.
 
 ```dart
 import 'package:dart_bcv/dart_bcv.dart';
 
 void main() async {
-  final String instanceBCV = await BCVWebSite.get_rates(currency_code: 'USD'); // Obtener la Mondena USD
+  final String instanceBCV = await BCVWebSite.getRates(currencyCode: 'USD'); // Obtener la Mondena USD
   
   print( instanceBCV );
 }
@@ -32,12 +32,12 @@ void main() async {
 `Console: 24.39`
 ```
 
-Para obtener todas las monedas disponibles de dart_bcv. Utilizamos el metodo `get_rates()` dejando comillas simples `' '` al parametro `currency_code`.
+Para obtener todas las monedas disponibles de dart_bcv. Utilizamos el metodo `getRates()` dejando comillas simples `' '` al parametro `currencyCode`.
 ```dart
 import 'package:dart_bcv/dart_bcv.dart';
 
 void main() async {
-  final String instanceBCV = await BCVWebSite.get_rates(currency_code: ' '); // Obtener todas las monedas
+  final String instanceBCV = await BCVWebSite.getRates(currencyCode: ' '); // Obtener todas las monedas
   
   print( instanceBCV );
 }
