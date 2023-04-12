@@ -3,7 +3,7 @@ import 'package:test/test.dart';
 
 void main() {
     test('First Test', () async {
-      expect(await BCVWebSite.get_rates(currency_code: 'currency_code'), isTrue);
+      expect(await BCVWebSite.getRates(currencyCode: 'currency_code'), isTrue);
     });
 }
 
